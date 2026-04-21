@@ -1,13 +1,13 @@
 Lecture_Start=1
-Lecture_End=22
+Lecture_End=30
 
 colab_prefix="https://colab.research.google.com/github/valsson-group/UNT-ChemicalApplicationsOfMachineLearning-Spring2026/blob/main/"
 
 LinksFile="Lectures.md"
 
 if [[ -f ${LinksFile} ]]; then
-  echo "Error ${LinksFile} already exist"
-  exit
+  echo "Warning: ${LinksFile} already exist"
+  # exit
 fi 
 
 for i in `seq ${Lecture_Start} ${Lecture_End}`
